@@ -4,3 +4,7 @@
 	font-weight: bold;
 	margin-left: 15px;
 }
+//modification ou ajout de couleur
+@mixin color-choice($couleur, $valeur) {
+	#{$couleur}: $valeur;
+}
