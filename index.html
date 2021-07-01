@@ -21,27 +21,31 @@
 		<link rel="stylesheet" href="../css/styles.css" />
 		<title>ohmyfood</title>
 	</head>
-	<body>
-		<main class="globan-container">
-			<div class="loader">
-				<div class="loader__animate"></div>
-				<img
-					class="loader__image"
-					src="../images/ohmyfood-loader.png"
-					alt="animation chargement"
-				/>
-			</div>
-			<header>
-				<img src="../images/logo/ohmyfood@2x.svg" alt="" />
-			</header>
+	<body class="globan-container">
+		<div class="loader">
+			<div class="loader__animate"></div>
+			<img
+				class="loader__image"
+				src="../images/ohmyfood-loader.png"
+				alt="animation chargement"
+			/>
+		</div>
+
+		<header class="nav-head">
+			<a href="./index.html"
+				><i class="nav-head--fas fas fa-arrow-left"></i
+			></a>
+
+			<img src="../images/logo/ohmyfood@2x.svg" alt="" />
+
 			<div class="location">
 				<i class="location__icone fas fa-map-marker-alt"></i>
 				<h3 class="location__title">Paris, Belleville</h3>
 			</div>
 			<section class="presentation">
-				<p class="presentation__title">
+				<h2 class="presentation__title">
 					Réservez le menu qui vous convient
-				</p>
+				</h2>
 				<p class="presentation__para">
 					Découvrez des restaurants d'execption, sélectionnés par nos
 					soins.
@@ -50,9 +54,170 @@
 					Explorer nos restaurants</a
 				>
 			</section>
-			<section class="use"></section>
-			<section class="restaurant"></section>
-			<footer class="foo"></footer>
+		</header>
+
+		<main>
+			<section class="use">
+				<h2 class="use__title">Fonctionnement</h2>
+				<div class="use__list">
+					<div class="use__btn">
+						<div class="use__num">1</div>
+						<div class="use__btn-unity">
+							<i class="use--icon fas fa-mobile-alt"
+								><span class="use__btn-title"
+									>Choisissez un restaurant</span
+								></i
+							>
+						</div>
+					</div>
+
+					<div class="use__btn">
+						<div class="use__num">2</div>
+						<div class="use__btn-unity">
+							<i class="use--icon fas fa-list-ul"
+								><span class="use__btn-title"
+									>Composez votre menu</span
+								></i
+							>
+						</div>
+					</div>
+
+					<div class="use__btn">
+						<div class="use__num">3</div>
+						<div class="use__btn-unity">
+							<i class="use--icon fas fa-store"
+								><span class="use__btn-title">
+									Dégustez au restaurant</span
+								></i
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="restaurant">
+				<h2 class="restaurant__title">Restaurants</h2>
+				<div class="card-container">
+					<figure class="card">
+						<img
+							class="card__img"
+							src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+							alt=""
+						/>
+						<figcaption class="card__legend">
+							<div class="card__legend-title">
+								<h3 class="card__legend-title--position">
+									La palette du goût
+								</h3>
+								<p class="card__legend-title--position">
+									Ménilmontant
+								</p>
+							</div>
+
+							<div class="card__legend-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</figcaption>
+					</figure>
+
+					<figure class="card">
+						<img
+							class="card__img"
+							src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+							alt=""
+						/>
+						<figcaption class="card__legend">
+							<div class="card__legend-title">
+								<h3 class="card__legend-title--position">
+									La palette du goût
+								</h3>
+								<p class="card__legend-title--position">
+									Charonne
+								</p>
+							</div>
+
+							<div class="card__legend-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</figcaption>
+					</figure>
+
+					<figure class="card">
+						<img
+							class="card__img"
+							src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+							alt=""
+						/>
+						<figcaption class="card__legend">
+							<div class="card__legend-title">
+								<h3 class="card__legend-title--position">
+									La palette du goût
+								</h3>
+								<p class="card__legend-title--position">
+									Cité Rouge
+								</p>
+							</div>
+
+							<div class="card__legend-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</figcaption>
+					</figure>
+
+					<figure class="card">
+						<img
+							class="card__img"
+							src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+							alt=""
+						/>
+						<figcaption class="card__legend">
+							<div class="card__legend-title">
+								<h3 class="card__legend-title--position">
+									La palette du goût
+								</h3>
+								<p class="card__legend-title--position">
+									Folie-Méricourt
+								</p>
+							</div>
+
+							<div class="card__legend-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
 		</main>
+
+		<footer class="foo">
+			<div class="foo__logo-title">ohmyfood</div>
+			<nav class="foo__logo-nav">
+				<ul class="foo__bloc-nav">
+					<li class="foo__nav-title">
+						<a href="#"
+							><i class="foo__bloc-nav--fas fas fa-utensils"></i
+							>Proposer un restaurant</a
+						>
+					</li>
+					<li class="foo__nav-title">
+						<a href="#"
+							><i
+								class="foo__bloc-nav--fas fas fa-hands-helping"
+							></i
+							>Devenir partenaire</a
+						>
+					</li>
+					<li class="foo__nav-title">
+						<a href="#">Mentions légales</a>
+					</li>
+					<li class="foo__nav-title">
+						<a
+							href="mailto:ohmyfood?subject=Contactez moi&body= Merci de me contacter"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>

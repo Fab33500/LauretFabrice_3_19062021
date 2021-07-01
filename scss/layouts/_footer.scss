@@ -1,1 +1,28 @@
+.foo {
+	background-color: $color-foo;
+	padding: 30px;
+}
 
+.foo__bloc-nav {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.foo__logo-title {
+	color: $color-white;
+	font-family: $font-title;
+	font-size: $size-text + 5px;
+	padding-bottom: 15px;
+}
+
+.foo__nav-title {
+	padding-bottom: 10px;
+	a {
+		color: $color-white;
+		font-family: $font-txt;
+		font-size: $size-text;
+	}
+}
+.foo__bloc-nav--fas {
+	width: 25px;
+}
