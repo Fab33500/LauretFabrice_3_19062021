@@ -1,10 +1,27 @@
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiar: #99e2d0;
+//color global site
+$color-velvet-primary: #9356dc;
+$color-pink-secondary: #ff79da;
+$color-sky--tertiar: #99e2d0;
 $color-white: #ffffff;
-$color-foo: #353535;
-$color-bloc: #f6f6f6;
+$color-grey-foo: #353535;
+
+//color blocs
+$color-bloc: #eaeaea;
+$lighten-box: lighten($color-bloc, 3);
+
+//font global site
 $font-title: "Shrikhand", cursive;
 $font-txt: "Roboto", sans-serif;
-$pading-foo: 20px 0 20px 0;
 $size-text: 16px;
+
+//margin & padding & dimension
+$pading-foo: 20px 0 20px 0;
+
+//variable for responsive
+$medium: 768px !default;
+$large: 1000px !default;
+
+$medium-up: "only screen and (min-width: #{medium})";
+$medium-down: "only screen and (max-width: #{medium})";
+$large-up: "only screen and (min-width: #{large})";
+$large-down: "only screen and (max-width: #{large})";

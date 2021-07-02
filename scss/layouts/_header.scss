@@ -24,8 +24,8 @@
 }
 .loader__animate {
 	border: 10px solid transparent;
-	border-top: 10px solid $color-primary;
-	border-bottom: 10px solid $color-secondary;
+	border-top: 10px solid $color-velvet-primary;
+	border-bottom: 10px solid $color-pink-secondary;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -92,7 +92,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 50px;
-	background-color: #eaeaea;
+	background-color: $color-bloc;
 	box-shadow: inset 0px 15px 10px -10px rgb(0 0 0 / 10%);
 	.location__icone {
 		margin-right: 20px;
@@ -110,8 +110,7 @@
 	flex-direction: column;
 	text-align: center;
 	padding: 30px 0;
-
-	background-color: $color-bloc;
+	background-color: $lighten-box;
 }
 .presentation__title {
 	margin: 0 0 20px;
@@ -129,7 +128,7 @@
 	padding: 16px 30px;
 	border-radius: 30px;
 	text-align: center;
-	color: #fff;
+	color: $color-white;
 	font-weight: normal;
 	font-size: $size-text;
 	margin: 10px auto;

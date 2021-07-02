@@ -109,7 +109,7 @@
   flex-direction: column;
   text-align: center;
   padding: 30px 0;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
 }
 
 .presentation__title {
@@ -128,7 +128,7 @@
   padding: 16px 30px;
   border-radius: 30px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   font-weight: normal;
   font-size: 16px;
   margin: 10px auto;
@@ -173,7 +173,7 @@
   font-size: 16px;
   color: #7e7e7e;
   list-style: none;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   border-radius: 20px;
   width: clamp(50px, 90vw, 420px);
   height: 60px;
@@ -186,7 +186,7 @@
 
 /* section restaurant */
 .restaurant {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -200,7 +200,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
 }
 
 .card {
@@ -227,6 +227,10 @@
 
 .card__legend-title--position {
   margin: 0 0 8px 20px;
+}
+
+.card__legend-title {
+  color: initial;
 }
 
 .fa-heart {

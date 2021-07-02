@@ -15,6 +15,7 @@
 	align-items: center;
 	margin: 15px;
 }
+
 .use__btn-title {
 	color: initial;
 }
@@ -22,7 +23,7 @@
 .use__num {
 	font-weight: 900;
 	border-radius: 50px;
-	background-color: $color-primary;
+	background-color: $color-velvet-primary;
 	z-index: 10;
 	padding: 6px 9px;
 	color: $color-white;
@@ -35,7 +36,7 @@
 	font-size: $size-text;
 	color: #7e7e7e;
 	list-style: none;
-	background-color: $color-bloc;
+	background-color: $lighten-box;
 	border-radius: 20px;
 	width: clamp(50px, 90vw, 420px);
 	height: 60px;
@@ -49,21 +50,21 @@
 //section restaurant
 /* section restaurant */
 .restaurant {
-	background-color: $color-bloc;
+	background-color: $lighten-box;
 	display: flex;
 	flex-direction: column;
 	padding: 30px;
 }
 
 .restaurant__title {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .card-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: #f6f6f6;
+	background-color: $lighten-box;
 }
 
 .card {
@@ -88,6 +89,9 @@
 }
 .card__legend-title--position {
 	margin: 0 0 8px 20px;
+}
+.card__legend-title {
+	color: initial;
 }
 
 .fa-heart {
