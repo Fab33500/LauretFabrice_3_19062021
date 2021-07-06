@@ -7,6 +7,7 @@
 	background-color: rgb(153, 226, 208, 1);
 	-webkit-animation: hideLoader 0.3s ease-in 2s forwards;
 	animation: hideLoader 0.3s ease-in 0.2s forwards;
+	z-index: 20;
 }
 @-webkit-keyframes hideLoader {
 	to {
