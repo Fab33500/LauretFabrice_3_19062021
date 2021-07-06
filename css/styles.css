@@ -6,6 +6,7 @@
   background-color: #99e2d0;
   -webkit-animation: hideLoader 0.3s ease-in 2s forwards;
   animation: hideLoader 0.3s ease-in 0.2s forwards;
+  z-index: 20;
 }
 
 @-webkit-keyframes hideLoader {
@@ -269,8 +270,9 @@
 }
 
 body {
+  max-width: 1500px;
+  margin: 0 auto;
   line-height: 1;
-  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
