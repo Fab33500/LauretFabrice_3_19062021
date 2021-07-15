@@ -8,3 +8,37 @@
 @mixin color-choice($couleur, $valeur) {
 	#{$couleur}: $valeur;
 }
+
+// icon heart
+
+@mixin icon-regular($icone: "\f004", $sizev: 25px) {
+	content: $icone;
+	font-family: "Font Awesome 5 Free";
+	font-size: $sizev;
+}
+//variable a placer pour degradé
+
+// animation icon heart
+@mixin anim-heart {
+	background: $gradient;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition-duration: 0.8s;
+}
+
+//bouton
+@mixin btn-site {
+	text-decoration: none;
+	padding: 16px 30px;
+	border-radius: 30px;
+	text-align: center;
+	color: $color-white;
+	font-weight: normal;
+	font-size: 16px;
+	margin: 10px auto;
+	background: $gradient;
+	box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+	&:hover {
+		box-shadow: 4px 4px 10px rgb(0 0 0 / 70%);
+	}
+}

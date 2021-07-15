@@ -125,14 +125,5 @@
 }
 
 .presentation__btn {
-	text-decoration: none;
-	padding: 16px 30px;
-	border-radius: 30px;
-	text-align: center;
-	color: $color-white;
-	font-weight: normal;
-	font-size: $size-text;
-	margin: 10px auto;
-	background: linear-gradient(#ff79da, #9356dc);
-	box-shadow: 5px 5px 10px rgb(0 0 0 / 0.3);
+	@include btn-site;
 }

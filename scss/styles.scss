@@ -6,10 +6,11 @@
 @import "../scss/layouts/_header";
 @import "../scss/layouts/_main";
 @import "../scss/layouts/_footer";
+@import "../scss/layouts/_page-menu";
 
 //reset
 body {
-	max-width: 1500px;
+	max-width: 1550px;
 	margin: 0 auto;
 	line-height: 1;
 	font-family: $font-txt;

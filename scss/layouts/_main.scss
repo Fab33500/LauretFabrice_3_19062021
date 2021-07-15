@@ -71,8 +71,18 @@
 	width: clamp(300px, 90vw, 700px);
 	border-radius: 30px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
+.card__label {
+	background-color: $color-sky--tertiar;
+	padding: 10px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: darken($color: $color-sky--tertiar, $amount: 40);
+	font-weight: bold;
+}
 .card__img {
 	width: clamp(300px, 90vw, 700px);
 	height: 200px;
@@ -94,7 +104,18 @@
 	color: initial;
 }
 
-.fa-heart {
-	font-size: 30px;
-	margin-right: 15px;
+/* animation icone */
+.card__legend-icon::after {
+	cursor: pointer;
+	@include icon-regular;
+	position: relative;
+	right: 20px;
+	color: $color-grey-foo;
+}
+
+.card__legend-icon:hover {
+	font-weight: 900;
+	&.card__legend-icon::after {
+		@include anim-heart;
+	}
 }
