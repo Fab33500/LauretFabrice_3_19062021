@@ -42,3 +42,9 @@
 		box-shadow: 4px 4px 10px rgb(0 0 0 / 70%);
 	}
 }
+
+@mixin ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
