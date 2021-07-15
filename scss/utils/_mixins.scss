@@ -27,9 +27,9 @@
 }
 
 //bouton
-@mixin btn-site {
+@mixin btn-site($padd: 16px 30px) {
 	text-decoration: none;
-	padding: 16px 30px;
+	padding: $padd;
 	border-radius: 30px;
 	text-align: center;
 	color: $color-white;

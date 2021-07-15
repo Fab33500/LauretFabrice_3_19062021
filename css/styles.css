@@ -382,6 +382,7 @@
   font-size: 5vmin;
 }
 
+/* anim icone coeur */
 .menu__icon::after {
   cursor: pointer;
   content: "";
@@ -396,9 +397,10 @@
   font-weight: 900;
 }
 .menu__icon:hover.menu__icon::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition-duration: 0.8s;
 }
 
 /* menu container */
@@ -416,6 +418,19 @@
 
 .label__title {
   font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* souligne des titres entrée plats dessert */
+.label__title::before {
+  width: 50px;
+  height: 4px;
+  background-color: #99e2d0;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
 }
 
 .card-single {
@@ -449,6 +464,28 @@
 
 .card-single__price-cost {
   font-weight: 600;
+}
+
+/* btn order */
+.generic-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.order__btn {
+  text-decoration: none;
+  padding: 16px 50px;
+  border-radius: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 10px auto;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.order__btn:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 body {
