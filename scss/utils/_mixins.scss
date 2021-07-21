@@ -9,6 +9,12 @@
 	#{$couleur}: $valeur;
 }
 
+//display
+@mixin flex-sp-beet($disp: flex, $justif: space-between) {
+	display: $disp;
+	justify-content: $justif;
+}
+
 // icon heart
 
 @mixin icon-regular($icone: "\f004", $sizev: 25px) {

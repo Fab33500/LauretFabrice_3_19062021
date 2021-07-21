@@ -209,7 +209,7 @@
 }
 
 .card {
-  width: clamp(300px, 90vw, 700px);
+  width: clamp(200px, 90vw, 700px);
   border-radius: 30px;
   margin-bottom: 30px;
   position: relative;
@@ -226,7 +226,7 @@
 }
 
 .card__img {
-  width: clamp(300px, 90vw, 700px);
+  width: clamp(200px, 90vw, 700px);
   height: 200px;
   object-fit: cover;
   border-radius: 30px 30px 0 0;
@@ -250,24 +250,23 @@
 }
 
 /* animation icone */
-.card__legend-icon::after {
-  cursor: pointer;
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-size: 25px;
+.card__legend-icon-heart {
   position: relative;
   right: 20px;
-  color: #353535;
-}
-
-.card__legend-icon:hover {
-  font-weight: 900;
-}
-.card__legend-icon:hover.card__legend-icon::after {
-  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 25px;
+  transition: background-color 1500ms;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition-duration: 0.8s;
+  background-color: black;
+}
+.card__legend-icon-heart:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-image: linear-gradient(#ff79da, rgba(255, 255, 255, 0));
+  background-color: #9356dc;
 }
 
 .foo {
@@ -300,59 +299,6 @@
   width: 25px;
 }
 
-/* slide menu page 
-.slide {
-	width: 100%;
-	max-height: 65vh;
-	object-fit: cover;
-}*/
-/* bloc menu 
-.menu {
-	max-width: 85%;
-	margin: 0 auto;
-	padding: 20px;
-	position: relative;
-	border-radius: 30px 30px 0 0;
-	background-color: #eaeaea;
-	top: -60px;
-}
-
-.menu__title {
-	font-family: $font-title;
-	padding: $pading-foo;
-	&::after {
-		@include menu__title-icon;
-		position: absolute;
-		right: 20px;
-	}
-}
-
-.menu__box {
-	display: flex;
-	justify-content: space-between;
-}
-
-.menu__box-cards {
-	width: 30%;
-}
-
-.menu__box-label {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	height: 70px;
-	background-color: $color-white;
-	margin: 15px 0 15px 0;
-	padding: 15px 10px;
-	border-radius: 15px;
-}
-
-.menu__box-label-text {
-	line-height: 1.3;
-}
-.menu__box-label-price {
-	font-weight: 600;
-}*/
 .hero {
   width: 100%;
   height: 60vh;
@@ -382,25 +328,24 @@
   font-size: 5vmin;
 }
 
-/* anim icone coeur */
-.menu__icon::after {
-  cursor: pointer;
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-size: 25px;
-  position: absolute;
+/* anim icone heart */
+.menu__icon-heart {
+  position: relative;
   right: 20px;
-  top: 20px;
-}
-
-.menu__icon:hover {
-  font-weight: 900;
-}
-.menu__icon:hover.menu__icon::after {
-  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 30px;
+  transition: background-color 1500ms;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition-duration: 0.8s;
+  background-color: black;
+}
+.menu__icon-heart:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-image: linear-gradient(#ff79da, rgba(255, 255, 255, 0));
+  background-color: #9356dc;
 }
 
 /* menu container */
@@ -442,25 +387,25 @@
   border-radius: 15px;
   height: 75px;
   margin: 15px 0;
-  padding: 15px;
+  padding: 15px 0;
   line-height: 1.3;
-  position: relative;
   overflow: hidden;
 }
 .card-single:hover .card-single__check {
-  transform: translateX(-100%);
-  transition: 1050ms;
+  transform: translateX(0%);
   visibility: visible;
+  padding: 0 15px;
+  margin-right: 0;
 }
 .card-single:hover .card-single__check .card-single__check-icon {
   transform: rotate(360deg);
-  transition-duration: 1000ms;
+  transition-duration: 1200ms;
 }
 
 .card-single__block {
   overflow: hidden;
-  padding-right: 10px;
-  flex: 1;
+  padding-left: 15px;
+  width: 350px;
 }
 
 .card-single__subtitle,
@@ -468,6 +413,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.card-single__price {
+  max-width: 55px;
+  width: 100%;
 }
 
 .card-single__price-cost {
@@ -480,13 +430,11 @@
   justify-content: space-around;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  width: 60px;
   height: 75px;
   align-self: center;
-  position: absolute;
-  right: -60px;
   visibility: hidden;
-  transition-duration: 1000ms;
+  margin-right: -50px;
+  transition-duration: 600ms;
 }
 
 .card-single__check-icon::before {

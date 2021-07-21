@@ -1,62 +1,5 @@
-//slide menu page
-/* slide menu page 
-.slide {
-	width: 100%;
-	max-height: 65vh;
-	object-fit: cover;
-}*/
-
-//bloc menu
-/* bloc menu 
-.menu {
-	max-width: 85%;
-	margin: 0 auto;
-	padding: 20px;
-	position: relative;
-	border-radius: 30px 30px 0 0;
-	background-color: #eaeaea;
-	top: -60px;
-}
-
-.menu__title {
-	font-family: $font-title;
-	padding: $pading-foo;
-	&::after {
-		@include menu__title-icon;
-		position: absolute;
-		right: 20px;
-	}
-}
-
-.menu__box {
-	display: flex;
-	justify-content: space-between;
-}
-
-.menu__box-cards {
-	width: 30%;
-}
-
-.menu__box-label {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	height: 70px;
-	background-color: $color-white;
-	margin: 15px 0 15px 0;
-	padding: 15px 10px;
-	border-radius: 15px;
-}
-
-.menu__box-label-text {
-	line-height: 1.3;
-}
-.menu__box-label-price {
-	font-weight: 600;
-}*/
-
 //page menu enchante
-//essai
+
 .hero {
 	width: 100%;
 	height: 60vh;
@@ -74,8 +17,7 @@
 }
 
 .menu__box {
-	display: flex;
-	justify-content: space-between;
+	@include flex-sp-beet;
 	align-items: center;
 }
 
@@ -86,24 +28,26 @@
 	font-size: 5vmin;
 }
 
-/* anim icone coeur */
+/* anim icone heart */
 
-.menu__icon::after {
-	cursor: pointer;
-	@include icon-regular;
-	position: absolute;
+.menu__icon-heart {
+	position: relative;
 	right: 20px;
-	top: 20px;
-}
-
-.menu__icon:hover {
-	font-weight: 900;
-	//faire mixin
-	&.menu__icon::after {
-		@include anim-heart;
+	font-size: 30px;
+	transition: background-color 1500ms;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: black;
+	&:hover {
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 900;
+		background-image: linear-gradient($color-pink-secondary, rgba(255, 255, 255, 0));
+		background-color: $color-velvet-primary;
 	}
 }
-
 //menu-container
 /* menu container */
 .menu-container {
@@ -135,6 +79,7 @@
 	left: 0;
 }
 
+//animation card
 .card-single {
 	cursor: pointer;
 	display: flex;
@@ -144,32 +89,38 @@
 	border-radius: 15px;
 	height: 75px;
 	margin: 15px 0;
-	padding: 15px;
+	padding: 15px 0;
 	line-height: 1.3;
-	position: relative;
+
 	overflow: hidden;
 	&:hover .card-single__check {
-		transform: translateX(-100%);
-		transition: 1050ms;
+		transform: translateX(0%);
 		visibility: visible;
+		padding: 0 15px;
+		margin-right: 0;
 		& .card-single__check-icon {
 			transform: rotate(360deg);
-			transition-duration: 1000ms;
+			transition-duration: 1200ms;
 		}
 	}
 }
 
 .card-single__block {
 	overflow: hidden;
-	padding-right: 10px;
-	flex: 1;
+	padding-left: 15px;
+	width: 350px;
 }
 
+//faire une mixin pour les 2
 .card-single__subtitle,
 .card-single__title {
 	@include ellipsis;
 }
 
+.card-single__price {
+	max-width: 55px;
+	width: 100%;
+}
 .card-single__price-cost {
 	font-weight: 600;
 }
@@ -180,13 +131,11 @@
 	justify-content: space-around;
 	background-color: $color-sky--tertiar;
 	border-radius: 0 15px 15px 0;
-	width: 60px;
 	height: 75px;
 	align-self: center;
-	position: absolute;
-	right: -60px;
 	visibility: hidden;
-	transition-duration: 1000ms;
+	margin-right: -50px;
+	transition-duration: 600ms;
 }
 
 .card-single__check-icon::before {

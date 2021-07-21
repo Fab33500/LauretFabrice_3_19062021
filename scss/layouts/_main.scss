@@ -68,7 +68,7 @@
 }
 
 .card {
-	width: clamp(300px, 90vw, 700px);
+	width: clamp(200px, 90vw, 700px);
 	border-radius: 30px;
 	margin-bottom: 30px;
 	position: relative;
@@ -84,7 +84,7 @@
 	font-weight: bold;
 }
 .card__img {
-	width: clamp(300px, 90vw, 700px);
+	width: clamp(200px, 90vw, 700px);
 	height: 200px;
 	object-fit: cover;
 	border-radius: 30px 30px 0 0;
@@ -105,17 +105,22 @@
 }
 
 /* animation icone */
-.card__legend-icon::after {
-	cursor: pointer;
-	@include icon-regular;
+
+.card__legend-icon-heart {
 	position: relative;
 	right: 20px;
-	color: $color-grey-foo;
-}
-
-.card__legend-icon:hover {
-	font-weight: 900;
-	&.card__legend-icon::after {
-		@include anim-heart;
+	font-size: 25px;
+	transition: background-color 1500ms;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: black;
+	&:hover {
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 900;
+		background-image: linear-gradient($color-pink-secondary, rgba(255, 255, 255, 0));
+		background-color: $color-velvet-primary;
 	}
 }
