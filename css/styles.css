@@ -71,7 +71,7 @@
 /* header */
 .nav-head {
   text-align: center;
-  padding: 20px 0 0;
+  padding: 20px 0;
 }
 
 .fa-arrow-left {
@@ -96,7 +96,7 @@
   background-color: #eaeaea;
   box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.1);
 }
-.location .location__icone {
+.location__icone {
   margin-right: 20px;
 }
 
@@ -306,13 +306,17 @@
 }
 
 .container-menu {
-  max-width: 85%;
-  height: 600px;
   background-color: #eaeaea;
-  position: relative;
-  margin: auto;
-  top: -60px;
+  margin: -60px 0 0;
   border-radius: 30px 30px 0 0;
+  overflow: overlay;
+}
+@media only screen and (min-width: 1000px) {
+  .container-menu {
+    max-width: 85%;
+    position: relative;
+    margin: -60px 114px 0;
+  }
 }
 
 .menu__box {
@@ -324,7 +328,7 @@
 .menu__box-title {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 15px;
   font-size: 5vmin;
 }
 
@@ -350,15 +354,21 @@
 
 /* menu container */
 .menu-container {
-  display: flex;
   margin: 0 15px;
 }
+@media only screen and (min-width: 1000px) {
+  .menu-container {
+    display: flex;
+  }
+}
 
-.label {
-  max-width: 400px;
-  min-width: 250px;
-  width: 100%;
-  margin: 10px;
+@media only screen and (min-width: 1000px) {
+  .label {
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+    margin: 10px;
+  }
 }
 
 .label__title {
@@ -383,7 +393,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background: white;
+  background: #ffffff;
   border-radius: 15px;
   height: 75px;
   margin: 15px 0;
@@ -403,9 +413,14 @@
 }
 
 .card-single__block {
+  width: 100%;
   overflow: hidden;
   padding-left: 15px;
-  width: 350px;
+}
+@media only screen and (min-width: 1000px) {
+  .card-single__block {
+    width: 350px;
+  }
 }
 
 .card-single__subtitle,
@@ -448,6 +463,7 @@
 .generic-btn {
   text-align: center;
   margin-top: 20px;
+  padding: 30px 0 80px;
 }
 
 .order__btn {

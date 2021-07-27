@@ -54,3 +54,18 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+//mixin animate
+@mixin apear($name: anim, $dur: 200ms, $effect: ease-in-out) {
+	animation: $name $dur $effect;
+}
+
+// responsive
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint==desktop {
+		@media only screen and (min-width: 1000px) {
+			@content;
+		}
+	}
+}
