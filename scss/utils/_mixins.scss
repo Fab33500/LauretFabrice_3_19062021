@@ -55,9 +55,10 @@
 	overflow: hidden;
 }
 
-//mixin animate
-@mixin apear($name: anim, $dur: 200ms, $effect: ease-in-out) {
-	animation: $name $dur $effect;
+// animate menu pages
+
+@mixin apear($name: anim, $dur: 800ms, $effect: ease-in-out, $mode: both) {
+	animation: $name $dur $effect $mode;
 }
 
 // responsive
