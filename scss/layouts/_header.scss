@@ -8,6 +8,7 @@
 	@include apear(hide-loader, 3s, 1s);
 	z-index: 30;
 	position: fixed;
+	left: 0;
 }
 
 @keyframes hide-loader {
