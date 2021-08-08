@@ -119,4 +119,9 @@
 
 .presentation__btn {
 	@include btn-site;
+	&:hover {
+		box-shadow: 4px 4px 10px rgb(0 0 0 / 90%);
+		opacity: 0.75;
+		transition: all 1s ease-out;
+	}
 }
