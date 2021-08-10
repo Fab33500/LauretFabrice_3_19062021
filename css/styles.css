@@ -127,11 +127,11 @@
   margin: 10px auto;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 1s ease-out;
 }
 .presentation__btn:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
   opacity: 0.75;
-  transition: all 1s ease-out;
 }
 
 /* section use */
@@ -269,26 +269,17 @@
   position: relative;
   right: 20px;
   font-size: 25px;
-  transition: background-color 1500ms;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: black;
+  transition: background-color 0.8s;
 }
 .card__legend-icon-heart:hover {
   font-weight: 900;
   background-image: linear-gradient(#ff79da, rgba(255, 255, 255, 0));
   background-color: #9356dc;
-  animation: fadein 3000ms;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .foo {
   background-color: #353535;
   padding: 30px;
@@ -356,26 +347,17 @@
   position: relative;
   right: 20px;
   font-size: 30px;
-  transition: background-color 1500ms;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: black;
+  transition: background-color 0.8s;
 }
 .menu__icon-heart:hover {
   font-weight: 900;
   background-image: linear-gradient(#ff79da, rgba(255, 255, 255, 0));
   background-color: #9356dc;
-  animation: fadein 3000ms;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* menu container */
 .menu-container {
   margin: 0 15px;
@@ -534,11 +516,11 @@
   margin: 10px auto;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 1s ease-out;
 }
 .order__btn:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
   opacity: 0.75;
-  transition: all 1s ease-out;
 }
 
 body {

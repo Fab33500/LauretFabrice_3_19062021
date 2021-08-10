@@ -35,25 +35,18 @@
 	position: relative;
 	right: 20px;
 	font-size: 30px;
-	transition: background-color 1500ms;
+
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-color: black;
+	transition: background-color 0.8s;
 	&:hover {
 		font-weight: 900;
 		background-image: linear-gradient($color-pink-secondary, rgba(255, 255, 255, 0));
 		background-color: $color-velvet-primary;
-		animation: fadein 3000ms;
 	}
 }
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
+
 //menu-container
 /* menu container */
 .menu-container {
@@ -203,9 +196,9 @@
 
 .order__btn {
 	@include btn-site(16px 50px);
+	transition: all 1s ease-out;
 	&:hover {
 		box-shadow: 4px 4px 10px rgb(0 0 0 / 90%);
 		opacity: 0.75;
-		transition: all 1s ease-out;
 	}
 }

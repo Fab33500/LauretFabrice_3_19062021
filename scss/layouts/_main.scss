@@ -131,22 +131,14 @@
 	position: relative;
 	right: 20px;
 	font-size: 25px;
-	transition: background-color 1500ms;
+
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-color: black;
+	transition: background-color 0.8s;
 	&:hover {
 		font-weight: 900;
 		background-image: linear-gradient($color-pink-secondary, rgba(255, 255, 255, 0));
 		background-color: $color-velvet-primary;
-		animation: fadein 3000ms;
-	}
-}
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
 	}
 }
